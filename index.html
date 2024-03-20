@@ -765,7 +765,7 @@
             splide.go(`-1`);
             let listSlide = document.querySelectorAll('.listIMG');
             listSlide.forEach(function (item, i) {
-                item.src = `./assets/img/theme/AnhCuoi/gallery-${arr2[i]}.JPG`;
+                item.src = `./assets/img/theme/AnhCuoi/gallery-${arr2[i]}.jpg`;
             });
             // src = `./assets/img/theme/AnhCuoi/gallery-${index + 1}.JPG`;
             document.querySelector('#dialog-previewImage').style.display = 'flex';
@@ -788,9 +788,10 @@
             let name = document.querySelector('#input_name').value;
             let songuoi = parseInt(document.querySelector('#id_field_sl').value);
             let phuongtien = parseInt(document.querySelector('#id_field_pt').value);
+            let phone = document.querySelector('#input_phone').value;
             let url = `https://script.google.com/macros/s/AKfycbythGRbDwFjHSHpBVv6yRngg2O5SS8bG_YAHgc9BKE3wNtcDxxKzG2J2HId1RWK6q4MgQ/exec?`;
             if (isthamdu) {
-                url += `name_km=${encodeURI(name)}&tham_gia=X&count=${songuoi}&phuong_tien=${encodeURI(phuongtien == 1 ? 'X' : 'O')}&time_send=${encodeURI((new Date()).toString())}`;
+                url += `name_km=${encodeURI(name)}&tham_gia=X&count=${songuoi}&phuong_tien=${encodeURI(phuongtien == 1 ? 'X' : 'O')}&phone=${encodeURI(phone)}&time_send=${encodeURI((new Date()).toString())}`;
             } else {
                 url += `name_km=${encodeURI(name)}&tham_gia=O&time_send=${encodeURI((new Date()).toString())}`
             }
@@ -1206,29 +1207,29 @@
                                         <div class="splide__track">
                                             <ul class="splide__list" style="align-items: center;">
                                                 <li class="splide__slide"><img class="image-preview listIMG"
-                                                        src="./assets/img/theme/AnhCuoi/gallery-1.JPG"></li>
+                                                        src="./assets/img/theme/AnhCuoi/gallery-1.jpg"></li>
                                                 <li class="splide__slide"><img class="image-preview listIMG"
-                                                        src="./assets/img/theme/AnhCuoi/gallery-2.JPG"></li>
+                                                        src="./assets/img/theme/AnhCuoi/gallery-2.jpg"></li>
                                                 <li class="splide__slide"><img class="image-preview listIMG"
-                                                        src="./assets/img/theme/AnhCuoi/gallery-3.JPG"></li>
+                                                        src="./assets/img/theme/AnhCuoi/gallery-3.jpg"></li>
                                                 <li class="splide__slide"><img class="image-preview listIMG"
-                                                        src="./assets/img/theme/AnhCuoi/gallery-4.JPG"></li>
+                                                        src="./assets/img/theme/AnhCuoi/gallery-4.jpg"></li>
                                                 <li class="splide__slide"><img class="image-preview listIMG"
-                                                        src="./assets/img/theme/AnhCuoi/gallery-5.JPG"></li>
+                                                        src="./assets/img/theme/AnhCuoi/gallery-5.jpg"></li>
                                                 <li class="splide__slide"><img class="image-preview listIMG"
-                                                        src="./assets/img/theme/AnhCuoi/gallery-6.JPG"></li>
+                                                        src="./assets/img/theme/AnhCuoi/gallery-6.jpg"></li>
                                                 <li class="splide__slide"><img class="image-preview listIMG"
-                                                        src="./assets/img/theme/AnhCuoi/gallery-7.JPG"></li>
+                                                        src="./assets/img/theme/AnhCuoi/gallery-7.jpg"></li>
                                                 <li class="splide__slide"><img class="image-preview listIMG"
-                                                        src="./assets/img/theme/AnhCuoi/gallery-8.JPG"></li>
+                                                        src="./assets/img/theme/AnhCuoi/gallery-8.jpg"></li>
                                                 <li class="splide__slide"><img class="image-preview listIMG"
-                                                        src="./assets/img/theme/AnhCuoi/gallery-9.JPG"></li>
+                                                        src="./assets/img/theme/AnhCuoi/gallery-9.jpg"></li>
                                                 <li class="splide__slide"><img class="image-preview listIMG"
-                                                        src="./assets/img/theme/AnhCuoi/gallery-10.JPG"></li>
+                                                        src="./assets/img/theme/AnhCuoi/gallery-10.jpg"></li>
                                                 <li class="splide__slide"><img class="image-preview listIMG"
-                                                        src="./assets/img/theme/AnhCuoi/gallery-11.JPG"></li>
+                                                        src="./assets/img/theme/AnhCuoi/gallery-11.jpg"></li>
                                                 <li class="splide__slide"><img class="image-preview listIMG"
-                                                        src="./assets/img/theme/AnhCuoi/gallery-12.JPG"></li>
+                                                        src="./assets/img/theme/AnhCuoi/gallery-12.jpg"></li>
 
                                             </ul>
                                         </div>
@@ -1250,40 +1251,40 @@
                                     <div data-block="album" class="t8-list-img">
 
                                         <div class="nt-album-item" onclick="openPopup(0)"><img
-                                                src="./assets/img/theme/AnhCuoi/gallery-1.JPG">
+                                                src="./assets/img/theme/AnhCuoi/gallery-1.jpg">
                                         </div>
                                         <div class="nt-album-item" onclick="openPopup(1)"><img
-                                                src="./assets/img/theme/AnhCuoi/gallery-2.JPG">
+                                                src="./assets/img/theme/AnhCuoi/gallery-2.jpg">
                                         </div>
                                         <div class="nt-album-item" onclick="openPopup(2)"><img
-                                                src="./assets/img/theme/AnhCuoi/gallery-3.JPG">
+                                                src="./assets/img/theme/AnhCuoi/gallery-3.jpg">
                                         </div>
                                         <div class="nt-album-item" onclick="openPopup(3)"><img
-                                                src="./assets/img/theme/AnhCuoi/gallery-4.JPG">
+                                                src="./assets/img/theme/AnhCuoi/gallery-4.jpg">
                                         </div>
                                         <div class="nt-album-item" onclick="openPopup(4)"><img
-                                                src="./assets/img/theme/AnhCuoi/gallery-5.JPG">
+                                                src="./assets/img/theme/AnhCuoi/gallery-5.jpg">
                                         </div>
                                         <div class="nt-album-item" onclick="openPopup(5)"><img
-                                                src="./assets/img/theme/AnhCuoi/gallery-6.JPG">
+                                                src="./assets/img/theme/AnhCuoi/gallery-6.jpg">
                                         </div>
                                         <div class="nt-album-item" onclick="openPopup(6)"><img
-                                                src="./assets/img/theme/AnhCuoi/gallery-7.JPG">
+                                                src="./assets/img/theme/AnhCuoi/gallery-7.jpg">
                                         </div>
                                         <div class="nt-album-item" onclick="openPopup(7)"><img
-                                                src="./assets/img/theme/AnhCuoi/gallery-8.JPG">
+                                                src="./assets/img/theme/AnhCuoi/gallery-8.jpg">
                                         </div>
                                         <div class="nt-album-item" onclick="openPopup(8)"><img
-                                                src="./assets/img/theme/AnhCuoi/gallery-9.JPG">
+                                                src="./assets/img/theme/AnhCuoi/gallery-9.jpg">
                                         </div>
                                         <div class="nt-album-item" onclick="openPopup(9)"><img
-                                                src="./assets/img/theme/AnhCuoi/gallery-10.JPG">
+                                                src="./assets/img/theme/AnhCuoi/gallery-10.jpg">
                                         </div>
                                         <div class="nt-album-item" onclick="openPopup(10)"><img
-                                                src="./assets/img/theme/AnhCuoi/gallery-11.JPG">
+                                                src="./assets/img/theme/AnhCuoi/gallery-11.jpg">
                                         </div>
                                         <div class="nt-album-item" onclick="openPopup(11)"><img
-                                                src="./assets/img/theme/AnhCuoi/gallery-12.JPG">
+                                                src="./assets/img/theme/AnhCuoi/gallery-12.jpg">
                                         </div>
                                     </div>
                                 </div>
@@ -1322,11 +1323,10 @@
                                                     </div>
                                                     <div class="event-icon"></div>
                                                     <div class="t8-event-content">
-                                                        <div data-block-node="timemark-datetime" class="time">16:00 PM, Thứ Bảy, 30/03/2024
+                                                        <div data-block-node="timemark-datetime" class="time">16:00. Thứ Bảy, 30/03/2024
                                                         </div>
                                                         <div data-block-node="timemark-name" class="title">Đón Khách
                                                         </div>
-
                                                     </div>
                                                 </div>
                                                 <div data-block="timemark" data-transition-duration="900" class="t8-event-item revealAnimation">
@@ -1341,50 +1341,9 @@
                                                     </div>
                                                     <div class="event-icon"></div>
                                                     <div class="t8-event-content">
-                                                        <div data-block-node="timemark-datetime" class="time">16:30
-                                                            PM, Thứ Bảy, 30/03/2024
+                                                        <div data-block-node="timemark-datetime" class="time">16:30. Thứ Bảy, 30/03/2024
                                                         </div>
-                                                        <div data-block-node="timemark-name" class="title">Tiệc Mừng
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div data-block="timemark" data-transition-duration="500" class="t8-event-item revealAnimation">
-                                                    <div class="t8-event-time">
-                                                        <div class="wr">
-                                                            <div data-block-node="timemark-datetime">
-                                                                <img data-gjs-type="image" data-editable="true"
-                                                                    src="./assets/img/gate.png"
-                                                                    alt="" class="event-icons" id="i9fii">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="event-icon"></div>
-                                                    <div class="t8-event-content">
-                                                        <div data-block-node="timemark-datetime" class="time">09:30 AM, Chủ Nhật, 31/03/2024
-                                                        </div>
-                                                        <div data-block-node="timemark-name" class="title">Đón Khách
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div data-block="timemark" data-transition-duration="900" class="t8-event-item revealAnimation">
-                                                    <div class="t8-event-time">
-                                                        <div class="wr">
-                                                            <div data-block-node="timemark-datetime">
-                                                                <img data-gjs-type="image" data-editable="true"
-                                                                    src="./assets/img/plate-2.png"
-                                                                    alt="" class="event-icons" id="iriks">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="event-icon"></div>
-                                                    <div class="t8-event-content">
-                                                        <div data-block-node="timemark-datetime" class="time">10:00
-                                                            AM, Chủ Nhật, 31/03/2024
-                                                        </div>
-                                                        <div data-block-node="timemark-name" class="title">Tiệc Mừng
-                                                        </div>
+                                                        <div data-block-node="timemark-name" class="title">Tiệc Mừng</div>
                                                     </div>
                                                 </div>
                                                 <div data-block="timemark" data-transition-duration="700" class="t8-event-item revealAnimation">
@@ -1399,11 +1358,9 @@
                                                     </div>
                                                     <div class="event-icon"></div>
                                                     <div class="t8-event-content">
-                                                        <div data-block-node="timemark-datetime" class="time">11:00 AM, Chủ Nhật, 31/03/2024
+                                                        <div data-block-node="timemark-datetime" class="time">11:00. Chủ Nhật, 31/03/2024
                                                         </div>
-                                                        <div data-block-node="timemark-name" class="title">Lễ Thành Hôn
-
-                                                        </div>
+                                                        <div data-block-node="timemark-name" class="title">Lễ Thành Hôn</div>
                                                     </div>
                                                 </div> 
                                                 <div data-block="timemark" data-transition-duration="1100" class="t8-event-item revealAnimation">
@@ -1418,12 +1375,8 @@
                                                     </div>
                                                     <div class="event-icon"></div>
                                                     <div class="t8-event-content">
-                                                        <div data-block-node="timemark-datetime" class="time">12:00
-                                                            AM, Chủ Nhật, 31/03/2024
-                                                        </div>
-                                                        <div data-block-node="timemark-name" class="title">Tung Hoa
-
-                                                        </div>
+                                                        <div data-block-node="timemark-datetime" class="time">12:00. Chủ Nhật, 31/03/2024</div>
+                                                        <div data-block-node="timemark-name" class="title">Tung Hoa</div>
                                                     </div>
                                                 </div>
                                                 <i class="bx bxs-heart icon-heart"></i>
@@ -1451,7 +1404,7 @@
                                             </div>
                                             <div class="row row-1 justify-content-center">
                                                 <div class="col-lg-4 col-md-6 col-sm-12 card-col">
-                                                    <img class="card-img-1" src="./assets/img/theme/HUY_7806.JPG" alt="Nhà gái">
+                                                    <img class="card-img-1" src="./assets/img/theme/HUY_7846.jpg" alt="Nhà gái">
                                                     <div class="title-card">Nhà Gái</div>
                                                     <div class="time-card"><i class="far fa-clock"></i> 16:00 PM. Thứ bảy, 30/03/2024
                                                     </div>
@@ -1591,6 +1544,12 @@
                                                                 </option>
                                                             </select>
                                                         </div>
+                                                    </div>
+                                                    <div class="t8-form-group">
+                                                        <p class="form-title">Số điện thoại (Nếu đi chung)<span id="i6vhk6">*</span></p>
+                                                        <input id="input_phone" type="text"
+                                                             required=""
+                                                            class="form-input">
                                                     </div>
                                                     <div class="t8-form-group">
                                                         <button id="sendDataSubmit" onclick="sendData()"
