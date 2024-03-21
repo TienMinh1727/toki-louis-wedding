@@ -1256,7 +1256,7 @@ a:hover {
 .t8-journey-box .t8-journey-img {
   margin: auto;
   width: 60%;
-  background-color: var(--color-3);
+  background-color: #92C7CF;
   padding-bottom: 0.05px;
 }
 
@@ -2672,7 +2672,7 @@ a:hover {
   }
 
   .t8-journey-img img {
-    width: 220px;
+    width: 86%;
     height: 225px;
   }
 
