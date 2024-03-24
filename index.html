@@ -791,9 +791,9 @@
             let phone = document.querySelector('#input_phone').value;
             let url = `https://script.google.com/macros/s/AKfycbythGRbDwFjHSHpBVv6yRngg2O5SS8bG_YAHgc9BKE3wNtcDxxKzG2J2HId1RWK6q4MgQ/exec?`;
             if (isthamdu) {
-                url += `name_km=${encodeURI(name)}&tham_gia=X&count=${songuoi}&phuong_tien=${encodeURI(phuongtien == 1 ? 'X' : 'O')}&phone=${encodeURI(phone)}&time_send=${encodeURI((new Date()).toString())}`;
+                url += `name_km=${encodeURI(name)}&tham_gia=Có&count=${songuoi}&phuong_tien=${encodeURI(phuongtien == 1 ? 'Đi chung' : 'Tự túc')}&phone=${encodeURI(phone)}&time_send=${encodeURI((new Date()).toString())}`;
             } else {
-                url += `name_km=${encodeURI(name)}&tham_gia=O&time_send=${encodeURI((new Date()).toString())}`
+                url += `name_km=${encodeURI(name)}&tham_gia=Không&time_send=${encodeURI((new Date()).toString())}`
             }
             fetch(url).then(function (response) {
                 document.getElementById('loading2').style.display = 'none';
